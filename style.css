@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  background-color: whitesmoke;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.img-container {
+  margin: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.img-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 800px) {
+  .img-container {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .heading{
+    font-size: 14px;
+  }
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
